@@ -184,23 +184,23 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Hannukah Party :)",
+            title: "Purim Party :)",
 
             // Event start date
-            start: new Date('Dec 12, 2025 19:00'),
+            start: new Date('Mar 6, 2026 20:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Dec 13, 2025 1:00'),
+            end: new Date('Mar 7, 2026 2:00'),
 
             // Event Address
             address: '230 South St, Jamaica Plain, MA 02130',
 
             // Event Description
-            description: "We are in apartment 2. Let us know if you have any questions!"
+            description: "We are in apartment 2. PLEASE wear a costume. Let us know if you have any questions!"
         }
     });
 
@@ -220,12 +220,9 @@ $(document).ready(function () {
         // }
         // else {
             
-            // original link to script is : 'https://script.google.com/macros/s/AKfycbyo0rEknln8LedEP3bkONsfOh776IR5lFidLhJFQ6jdvRiH4dKvHZmtoIybvnxpxYr2cA/exec'
-            // link to the google app deployment that works with the invite code 271117:
-            // https://script.google.com/macros/s/AKfycbzObKyYT_Sf6fxEzTEOrIjmj6fIVOuP-M9m8Eh9BBPQMO0TryfIXW6QhqYsX1bJd91rGQ/exec
-            // link to the script with the invite code check removed (the one that was working before):
-            // 'https://script.google.com/macros/s/AKfycbwZYTnLjP1q-qoRbjlQLaQWqtRINNN-ceoBCf8wullGzLiKyNApnRCZWi0nqauTvgOYGA/exec'
-            $.post('https://script.google.com/macros/s/AKfycbwZYTnLjP1q-qoRbjlQLaQWqtRINNN-ceoBCf8wullGzLiKyNApnRCZWi0nqauTvgOYGA/exec', data)
+            // old url from the 2025 hannukah website 
+            //https://script.google.com/macros/s/AKfycbwZYTnLjP1q-qoRbjlQLaQWqtRINNN-ceoBCf8wullGzLiKyNApnRCZWi0nqauTvgOYGA/exec
+            $.post('https://script.google.com/macros/s/AKfycbxoeNu-ApkfOtsf8L0rHCsaBv0e4fqJZs6h0forqY9PfnyllFLPstwUZgfnvF4AmZ8O/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
